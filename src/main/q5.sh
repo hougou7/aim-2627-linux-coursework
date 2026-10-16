@@ -6,5 +6,8 @@ input=${1:?需要输入目录}
 output=${2:?需要输出目录}
 
 # TODO：删除下方提示和 exit 77，再填写你的命令。
-printf '%s\n' 'Q5 尚未实现' >&2
-exit 77
+source "$input/launch.env"
+
+bash "$LAUNCH_TOOL" "$MODEL_PATH" "$CAMERA_PATH"
+
+
