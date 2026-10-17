@@ -16,6 +16,7 @@ Host aim-sentry
     UserKnownHostsFile "$KNOWN_HOSTS"
     StrictHostKeyChecking yes
     IdentitiesOnly yes
+    BatchMode yes
 EOF
 
 chmod 600 "$output/ssh_config"
